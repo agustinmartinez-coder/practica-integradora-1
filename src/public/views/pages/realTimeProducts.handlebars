@@ -1,0 +1,65 @@
+<div class="vh-100">
+
+  <table class="table" id="productsTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Thumbnail</th>
+        <th>Price</th>
+        <th>Code</th>
+        <th>Stock</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="productsBody"></tbody>
+  </table>
+
+  <!--BTN + FORMULARIO CON POPUP -->
+  <div class="" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div role="document">
+      <div class="">
+        <div>
+          <h5 class="">Nuevo producto</h5>
+          <button type="button" class="close btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div>
+          <form id="newProductForm">
+            <div class="mb-3">
+              <label for="title">Título</label>
+              <input autocomplete="off" type="text" class="" id="title" name="title">
+            </div>
+            <div class="mb-3">
+              <label for="description">Descripción</label>
+              <textarea class="" id="description" name="description" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="price">Precio</label>
+              <input autocomplete="off" type="number" class="" id="price" name="price">
+            </div>
+            <div class="mb-3">
+              <label for="thumbnail">URL de la imagen (Thumbnail)</label>
+              <input autocomplete="off" type="text" class="" id="thumbnail" name="thumbnail">
+            </div>
+            <div class="mb-3">
+              <label for="code">Código</label>
+              <input autocomplete="off" type="text" class="" id="code" name="code">
+            </div>
+            <div class="mb-3">
+              <label for="stock">Stock</label>
+              <input autocomplete="off" type="number" class="" id="stock" name="stock">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Registrar producto</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="z-index: 1000; margin: 40px;"
+    class="btn btn-sm rounded-md btn-primary position-fixed bottom-0 end-0 py-2 px-2 shadow">Nuevo producto</button>
+</div>

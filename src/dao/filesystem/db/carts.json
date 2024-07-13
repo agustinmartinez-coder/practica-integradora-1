@@ -1,16 +1,16 @@
 [
     {
-      "id": 1,
-      "products": [
+    "id": 1,
+    "products": [
         {
-          "id": 2,
-          "title": "pelota de rugby",
-          "description": "pelota de cuero",
-          "price": 17000,
-          "thumbnail": "",
-          "code": "PR001",
-          "quantity": 2
+        "id": 2,
+        "title": "Sweater Lana",
+        "description": "Lana",
+        "price": 5000,
+        "thumbnail": "",
+        "code": "SL001",
+        "quantity": 2
         }
-      ]
+    ]
     }
-  ]
+]

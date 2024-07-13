@@ -84,7 +84,6 @@ io.on("connection", (socket) => {
     const messages = await messagesModel.find();
     socket.emit("showMessages", messages);
   });
-
 });
 
 // ** Routes / Endpoints **
